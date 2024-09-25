@@ -1,61 +1,61 @@
-/* Reset some default browser styles */
-body, html {
+/* Ensure the background is displayed correctly */
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    height: 100%;
-}
-
-/* Full-width background banner */
-.header {
+    font-family: Arial, sans-serif;
     background: url('background_flipped.png') no-repeat center center;
     background-size: cover;
-    width: 100%;
-    padding: 25px 0; /* Padding top and bottom */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-/* Adjust logo size */
+/* Header with logo */
+.header {
+    width: 100%;
+    padding: 25px 0;
+}
+
 .logo img {
-    width: 10%; /* Set logo to be 25% of the screen width */
-    max-height: 300px; /* Limit the height of the logo to 300px */
+    width: 25%;
+    max-height: 300px;
     height: auto;
 }
 
-/* Main content section */
+/* Content is centered */
 .content {
-    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
     padding: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background */
-    margin: 20px auto;
-    max-width: 800px;
     border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
 }
 
-/* Headline styles */
-.content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* Paragraph styles */
-.content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/* Download button */
+/* Button styles */
 .download-button {
-    background-color: #28a745;
-    padding: 15px 30px;
+    background-color: #007aff;
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 .download-button:hover {
-    background-color: #218838;
+    background-color: #005bb5;
+}
+
+/* Link to the official site */
+.official-site-link {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.official-site-link:hover {
+    text-decoration: underline;
 }
