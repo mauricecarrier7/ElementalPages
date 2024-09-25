@@ -10,52 +10,56 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 /* Header with logo */
 .header {
     width: 100%;
     padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
-    width: 25%;
-    max-height: 300px;
+    width: 25%; /* Adjusted logo size */
+    max-width: 300px; /* Added a maximum width limit */
     height: auto;
 }
 
-/* Content is centered */
+/* Content block centered */
 .content {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     max-width: 600px;
+    width: 100%;
 }
 
 /* Button styles */
-.download-button {
+button {
     background-color: #007aff;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
+    border: none;
+    cursor: pointer;
     margin: 10px 0;
+    font-size: 16px;
 }
 
-.download-button:hover {
+button:hover {
     background-color: #005bb5;
 }
 
-/* Link to the official site */
-.official-site-link {
-    color: #00ffcc;
-    text-decoration: none;
+/* Link button styles */
+.official-site-button {
+    background-color: #00ffcc;
 }
 
-.official-site-link:hover {
-    text-decoration: underline;
+.official-site-button:hover {
+    background-color: #00cca6;
 }
