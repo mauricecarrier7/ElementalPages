@@ -17,7 +17,7 @@ body, html {
 
 /* Adjust logo size */
 .logo img {
-    width: 25%; /* Set logo to be 25% of the screen width */
+    width: 10%; /* Set logo to be 25% of the screen width */
     max-height: 300px; /* Limit the height of the logo to 300px */
     height: auto;
 }
