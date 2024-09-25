@@ -8,12 +8,26 @@ body, html {
 
 /* Background image container */
 .background-image {
-    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background: url('background_flipped.png') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    width: 250px; /* Adjust the logo size */
+    height: auto;
 }
 
 /* Content overlay styling */
@@ -23,6 +37,7 @@ body, html {
     border-radius: 10px;
     text-align: center;
     color: white;
+    margin-top: 100px; /* Push content down to create space under logo */
 }
 
 /* Heading and paragraph styles */
