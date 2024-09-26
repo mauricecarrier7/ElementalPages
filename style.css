@@ -23,7 +23,7 @@ body {
 
 .logo img {
     width: 25%; /* Adjusted logo size */
-    max-width: 300px; /* Added a maximum width limit */
+    max-width: 100px; /* Added a maximum width limit */
     height: auto;
 }
 
